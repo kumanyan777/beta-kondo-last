@@ -1,0 +1,52 @@
+.class1 {
+  position:relative;
+  top: 10px;
+  left:0px;
+  width: 600px;
+}
+
+.class2 {
+  position:relative;
+  top: -30px;
+  left:110px;
+  width: 450px;
+}
+
+.class3 {
+  position:relative;
+  top: -40px;
+  left:20px;
+  width:600px;
+}
+
+h2{
+	position:relative;
+  top: -400px;
+  left: 720px
+}
+
+td img{
+	position:relative;
+  top: -530px;
+  left: 750px;
+  width:120px;
+  height:120px;
+}
+
+td2 img{
+	position:relative;
+  top: -470px;
+  left: 810px;
+  width:120px;
+  height:120px;
+}
+
+#result{
+  font-family: serif;
+position:absolute;
+ font-weight: bold;
+  top: 540px;
+  left: 1015px;
+  color: #000;
+  z-index: 100;
+}
