@@ -9,7 +9,7 @@ const app = Vue.createApp({
   methods: {
     answer(){
       if (this.input === this.answerWord){
-        window.location.href = "proN7.html";
+        window.location.href = "index25.html";
       }else{
         this.style = "show";
       }
