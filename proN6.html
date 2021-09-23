@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="proN6.css">
+  <title>7</title>
+</head>
+<body id="stage">
+
+  <div class="imagemain">
+  </div>
+  
+  <div class="serifu">
+    <p>どうやら妖怪たちが怒って友達をつれさったらしい<br>
+      どうにかして助けないと！<br>
+    </p>
+  </div>
+  
+  <main class="main">
+    <!-- <p>↓↓クリックできるよ！↓↓</p> -->
+    <div class="area">
+      <input @click="changeSection(1)" type="radio" name="tab_name" id="tab1" checked>
+      <label class="tab_class" for="tab1">プール</label>
+      <div class="content_class">
+        <div class="imagemain1">
+          <img src="image4.png" class="image1">
+        </div>
+         
+        <div class="serifu">
+          <p>ここにはなにもないぜ<br>
+          　　ほかをあたんな</p>
+        </div>
+        
+        
+        
+      </div>
+      <input @click="changeSection(2)" type="radio" name="tab_name" id="tab2" >
+      <label class="tab_class" for="tab2">トイレ</label>
+      <div class="content_class">
+        <div class="imagemain2">
+          <img src="image1.png" class="image1">
+        </div>
+
+        <div class="serifu">
+          <p>あなたたちのせいで私迷惑してるの。でも<br>
+            この問題がわかったらゆるしてあげてもいいわよ</p>
+        </div>
+        
+        <img src="toilet.png" class="imageq">
+        
+        
+      </div>
+      <input @click="changeSection(3)" type="radio" name="tab_name" id="tab3" >
+      <label class="tab_class" for="tab3">図書室</label>
+      <div class="content_class">
+        <div class="imagemain3">
+          <img src="image2.png" class="image1">
+        </div>
+
+        <div class="serifu">
+          <p>ペラっペラっペラっ（笑い声）<br>
+            ここが見つかっちまったか！<br>
+            友達のいばしょを教えて欲しければこのナゾをとけ！</p>
+        </div>
+
+
+        <img src="libraryq.png" class="imageq">
+
+        <div class="button04">
+          <a href="proN10.html">解けたらみてね</a>
+        </div>
+        
+        
+      </div>
+      <input @click="changeSection(4)" type="radio" name="tab_name" id="tab4" >
+      <label class="tab_class" for="tab4">美術室</label>
+      <div class="content_class">
+        <div class="imagemain4">
+          <img src="image5.png" class="image1">
+        </div>
+
+        <div class="serifu">
+          <p>ふふっ、ここにはなにもありませんよ</p>
+        </div>
+        
+        
+        
+        
+      </div>
+      <input @click="changeSection(5)" type="radio" name="tab_name" id="tab5" >
+      <label class="tab_class" for="tab5">教室</label>
+      <div class="content_class">
+        <div class="imagemain5">
+          <img src="image7.png" class="image1">
+        </div>
+
+        <div class="serifu">
+          <p>お前らのせいで、俺のアジトがめちゃくちゃだぜ</p>
+        </div>
+        
+        <img src="step2.png" class="imageq">
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <!-- <div v-if="showNum == 2">
+      <p :class="collectClassName1">正解！！</p>
+      <p :class="wrongClassName1">不正解。。</p>
+      <input :disabled="isPush1" placeholder="プールのクイズ" v-model="input1" class="quiz-input" type="text">
+      <br>
+      <button @click="checkAnswer1()" class="btn btn-border">回答する</button>
+    </div>
+    <div v-if="showNum == 3">
+      <p :class="collectClassName2">正解！！</p>
+      <p :class="wrongClassName2">不正解。。</p>
+      <input :disabled="isPush2" placeholder="図書館のクイズ" v-model="input2" class="quiz-input" type="text">
+      <br>
+      <button @click="checkAnswer2()" class="btn btn-border">回答する</button>
+    </div>
+    <div class="hint-wrapper" v-if="collectBool1 == true && collectBool2 == true">
+      <p class="hint">ヒント</p>
+      <img src="textbook1.png" alt="">
+      <img src="textbook2.png" alt="">
+      <img src="textbook3.png" alt="">
+    </div> -->
+    <div class="serifu">
+      <p>トイレの上の数字→下の数字→教室の上の数字→教室の真ん中の数字→教室の下の数字<br>
+      この順で入力してね！</p>
+    </div>
+    <input v-model="input" type="text" id="answer-input">
+    <p :class="style" id="incorrect">不正解</p>
+    <label for="answer-input">問題</label>
+    <button @click="answer()">答える</button>
+  </main>
+  
+
+  <footer>
+    
+  </footer>
+  <!-- <script src="https://unpkg.com/vue@next"></script>
+  <script src="main6.js"></script> -->
+  <script src="https://unpkg.com/vue@next"></script>
+        <script src="script2.js"></script>
+</body>
+</html>

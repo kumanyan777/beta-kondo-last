@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+.serifu p {
+  margin-top: 100px;
+  margin-bottom: 200px;
+	color: white;
+	font-size: 30px;
+	margin-bottom: 50px;
+  text-align: center;
+  font-family: serif;
+}
+
+.imagemain {
+  margin: 10px 100px;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(game2.png);
+}
+
+.imagemain1 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(pool.png);
+}
+
+.imagemain2 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(game2.png);
+}
+
+.imagemain3 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(library.png);
+}
+
+.imagemain4 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(art.png);
+}
+
+.imagemain5 {
+  margin: 10px 0;
+  height: 85vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(room.png);
+}
+
+.imageq {
+  height: 700px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.image1 {
+  animation-name: game;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 40%;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+
+@keyframes game {
+  0% {
+      transform: translate(0,0px);
+  }
+
+  100% {
+      transform: translate(0,-15px)
+  }
+}
+
+.image {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.main p {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: serif;
+}
+
+
+.area {
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+ 
+.tab_class {
+  width: calc(92%/5);
+  height: 50px;
+  background-color: rgb(66, 66, 66);
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 2%;
+  font-family: serif;
+}
+
+.tab_class:last-of-type {
+  margin-right: 0;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+ 
+.content_class {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  margin-top: 80px;
+  
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.quiz-input{
+  width: 800px;
+  margin-left: 310px;
+  height: 70px;
+  margin-top:15px ;
+}
+
+.btn{
+  margin-left: 310px;
+}
+/* 変更禁止！ */
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+/* ここまで */
+
+.hint{
+  color: #fff;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  margin-bottom: 200px;
+}
+
+
+button {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(104, 104, 104);
+  font-size: 12px;
+  font-family: serif;
+}
+
+.button04 {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.button04 a {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: .5em 1em;
+  width: 400px;
+  color: #ffffff;
+  font-size: 50px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  font-family: serif;
+  text-decoration: none;
+}
+
+
+
+.button04 a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #505050;
+}
+
+.button04 a:hover::after {
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+

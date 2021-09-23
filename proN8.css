@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    text-align: center;
+  }
+  
+  .video-image {
+    text-align: center;
+  }
+
+.video-image video {
+  width: 90%;
+}
+
+.imageq img {
+  width: 40%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* 変更禁止！ */
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+/* ここまで */
+
+.hint{
+  color: #fff;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  margin-bottom: 200px;
+}
+
+
+button {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(104, 104, 104);
+  font-size: 12px;
+  font-family: serif;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proN4.css">
+    <title>5</title>
+</head>
+
+<body id="stage">
+    <div class="video-image">
+        <video controls src="sozai11.mp4"></video>
+    </div>
+    <div class="serifu">
+        <p>どこをさがす？</p>
+    </div>
+    <div class="area">
+        <input type="radio" name="tab_name" id="tab1" checked>
+         <label class="tab_class" for="tab1">机の中</label>
+        <div class="content_class">
+            <div class="image"></div>
+
+            <div class="serifu">
+                <p>なにもない</p>
+            </div>
+
+
+
+        </div>
+        <input type="radio" name="tab_name" id="tab2">
+        <label class="tab_class" for="tab2">掃除道具入れ</label>
+        <div class="content_class">
+            <div class="image">
+                <img src="image3.png" class="image1">
+            </div>
+
+            <div class="serifu">
+                <p>
+                    うわぁ！！うわさはホントだったのか。。<br>
+                    「タスケテクレテ..アリガトウ...」<br>
+                    「トモダチ..ヲ.サガシテイルノ？」<br>
+                    「タスケテアゲル..」<br>
+                    「コレ.アゲル..」
+                </p>
+            </div>
+
+
+            <div class="question">
+                <img src="step1.png" class="imageq">
+            </div>
+
+            <div class="serifu">
+                <p>なんだコレ？　みんなわかるかい？</p>
+            </div>
+
+
+
+        </div>
+        <input type="radio" name="tab_name" id="tab3">
+        <label class="tab_class" for="tab3">ロッカー</label>
+        <div class="content_class">
+            <div class="image"></div>
+
+            <div class="question">
+                <img src="hiragana-1.png" class="imageq">
+            </div>
+
+            <!-- <div class="serifu">
+                <p>なんだコレ？　みんなわかるかい？</p>
+            </div> -->
+
+        </div>
+
+        <input type="radio" name="tab_name" id="tab4">
+        <label class="tab_class" for="tab4">ゴミ箱</label>
+        <div class="content_class">
+            <div class="image"></div>
+
+            <div class="serifu">
+                <p>なにもない</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+        <input v-model="input" type="text" id="answer-input">
+        <p :class="style" id="incorrect">不正解</p>
+        <label for="answer-input">問題</label>
+        <button @click="answer()">回答</button>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
