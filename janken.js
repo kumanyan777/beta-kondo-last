@@ -30,7 +30,7 @@ function janken(user) {
 }
 
 function goWinPage() {
-    window.location.href = 'win.html';
+    window.location.href = 'proN8.html';
 }
 
 function hideJanken() {
